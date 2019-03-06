@@ -12,7 +12,7 @@ public class StringUtil {
 	//数据库中日期时间的格式
 	private static final String DB_PATTERN = "yyyy-MM-dd HH:mm:ss";
 	
-	//文件改名	将给定文件的主文件名改为yyyyMMddHHmmssSSSxxx的形式，其中xxx是100到999之间的随机数，文件的扩展名不变
+	//文件改名	 将给定文件的主文件名改为yyyyMMddHHmmssSSSxxx的形式，其中xxx是100到999之间的随机数，文件的扩展名不变
 	public static String convertFilename(String filename){ 
 		
 	    //获取扩展名
