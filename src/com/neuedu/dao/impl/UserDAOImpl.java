@@ -20,7 +20,7 @@ public class UserDAOImpl implements UserDAO {
 		
 		try {
 		
-			if(rs.next()){   //登录成功
+			if(rs.next()){    //登录成功
 					
 				//取出用户编号
 				int userid = rs.getInt(1);
