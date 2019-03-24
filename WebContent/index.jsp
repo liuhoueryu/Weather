@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>主页</title>
 </head>
 <body>
 
@@ -13,14 +13,14 @@
 	//登录检查
 	if(session.getAttribute("user")==null){   //未登录
 %>
-	<!-- 	
+		
 		<script>
 			alert("对不起，您尚未登录，请先登录");
 			location = "user_login.jsp";
 		</script>	
-	 -->
 	 
-	           对不起，您尚未登录，请先<a href="user_login.jsp">登录</a>
+	 
+	         //  对不起，您尚未登录，请先<a href="user_login.jsp">登录</a>
 <%		
 		return;
 	}
@@ -39,12 +39,12 @@
 	int onlineCount = (Integer)application.getAttribute("onlineCount");
 %>
 
-<img src="image/photo/<%=user.getPhoto()%>">，欢迎【<%=user.getUsername() %>】光临主页，当前积分为【<%=user.getScore() %>】分，您是第【<%=onlineCount %>】位访客
+<center><img src="image/photo/<%=user.getPhoto()%>">，欢迎【<%=user.getUsername() %>】光临主页，当前积分为【<%=user.getScore() %>】分，您是第【<%=onlineCount %>】位访客
 
 <br/>
-<a href="user_query.jsp">用户查询</a>
+<a href="weather_query.jsp">天气查询</a>
 <br/>
 <a href="UserLogoutServlet">注销</a>
-
+</center>
 </body>
 </html>

@@ -1,11 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
-	
 <head>
 		<meta charset="utf-8">
-		<title>登录界面</title>
+		<title>找回密码</title>
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/common.css" />
 		<link rel="stylesheet" href="css/font-awesome.min.css" />
@@ -13,36 +12,39 @@
 	<body>
 		<div class="wrap login_wrap">
 			<div class="content">
+				
 				<div class="logo"></div>
+				
 				<div class="login_box">	
 					
 					<div class="login_form">
 						<div class="login_title">
-							登录
+							注册
 						</div>
-						<form action=user_login_handle.jsp method="post">
+						<form action="#" method="post">
 							
 							<div class="form_text_ipt">
-								<input name="username" type="text" placeholder="用户名">
+								<input name="username" type="text" placeholder="手机号/邮箱">
 							</div>
-							<div class="ececk_warning"><span>用户名</span></div>
+							<div class="ececk_warning"><span>手机号/邮箱不能为空</span></div>
 							<div class="form_text_ipt">
 								<input name="password" type="password" placeholder="密码">
 							</div>
 							<div class="ececk_warning"><span>密码不能为空</span></div>
-							<div class="form_check_ipt">
-								<div class="left check_left">
-									<label><input name="" type="checkbox"> 下次自动登录</label>
-								</div>
-								<div class="right check_right">
-									<a href="user_retrieve_password.jsp">忘记密码</a>
-								</div>
+							<div class="form_text_ipt">
+								<input name="repassword" type="password" placeholder="重复密码">
 							</div>
+							<div class="ececk_warning"><span>密码不能为空</span></div>
+							<div class="form_text_ipt">
+								<input name="code" type="text" placeholder="验证码">
+							</div>
+							<div class="ececk_warning"><span>验证码不能为空</span></div>
+							
 							<div class="form_btn">
-								<button type="submit">登录</button>
+								<button type="button" onclick="javascript:window.location.href='#'">注册</button>
 							</div>
 							<div class="form_reg_btn">
-								<span>还没有帐号？</span><a href="user_register.jsp">马上注册</a>
+								<span>已有帐号？</span><a href="user_login.jsp">马上登录</a>
 							</div>
 						</form>
 						<div class="other_login">
@@ -50,9 +52,9 @@
 								<span>其它登录方式</span>
 							</div>
 							<div class="right other_right">
-								<a href="https://mail.qq.com/cgi-bin/loginpage"><i class="fa fa-qq fa-2x"></i></a>
-								<a href="https://wx.qq.com/"><i class="fa fa-weixin fa-2x"></i></a>
-								<a href="https://weibo.com"><i class="fa fa-weibo fa-2x"></i></a>
+								<a href="#"><i class="fa fa-qq fa-2x"></i></a>
+								<a href="#"><i class="fa fa-weixin fa-2x"></i></a>
+								<a href="#"><i class="fa fa-weibo fa-2x"></i></a>
 							</div>
 						</div>
 					</div>
