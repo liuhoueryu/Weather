@@ -54,6 +54,7 @@ div {
 			data-page-size="10" >
 				<%
 					DBManager dbManager = DBManager.getInstance();
+				
 					String sql = "select * from weather where city like ? and province like ? order by province asc, city asc,date asc";
 					ResultSet rs = dbManager.execQuery(sql, "%" + city + "%", "%" + province + "%");
 					out.print("<tr><td>省份</td><td>城市</td><td>天气</td><td>温度</td><td>降水量</td><td>日期</td></tr>");
